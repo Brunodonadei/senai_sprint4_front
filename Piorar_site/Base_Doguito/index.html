@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="styles.css" /> 
+        <title>Doguitos</title> 
+    </head>
+    <body>
+        <h1>SITE DE DOGUINHOS</h1>
+        <div id="dog1">
+            <img class="imagem1" src="Ibageins/2.jpeg" alt="Sammy"/> 
+            <h2>Sammy</h2>
+        </div>
+        <div id="dog2">
+            <img class="imagem2" src="Ibageins/3.jpeg" alt="Dragão"/> 
+            <h2>Dragão</h2>
+        </div>
+        <div id="dog3">
+            <img class="imagem3" src="Ibageins/4.jpeg" alt="Milton"/> 
+            <h2>Milton</h2>
+        </div>
+        <div id="dog4">
+            <img class="imagem4" src="Ibageins/5.jpeg" alt="Penny"/> 
+            <h2>Penny</h2>
+        </div>
+        <div id="dog5">
+            <img class="imagem5" src="Ibageins/6.jpeg" alt="Nenem"/> 
+            <h2>Nenem</h2>
+        </div>
+        <div id="botauns">
+            <input id="btn" type="button" value="Nome dos Spitz" onclick="soSpitz()"/> <!--Filter  -->
+            <input id="btn" type="button" value="Idade Real" onclick="idadeReal()"/> <!-- Map -->
+            <input id="btn" type="button" value="Soma todas as Idades" onclick="idadeSoma()"/> <!-- Reduce -->
+            <input id="btn" type="button" value="Piorar Site" onclick="mudaTudo()"/>
+        </div>
+
+        <script> 
+        dogs = [
+            {
+                nome: 'Sammy',
+                idade: 6,
+                raca: 'Samoieda'
+            },
+            {
+                nome: 'Dragão',
+                idade: 5,
+                raca: 'Spitz Alemão'
+            },
+            {
+                nome: 'Milton',
+                idade: 8,
+                raca: 'Spitz Alemão'
+            },
+            {
+                nome: 'Penny',
+                idade: 6,
+                raca: 'Spitz Alemão'
+            },
+            {
+                nome: 'Nenem',
+                idade: 4,
+                raca: 'Spitz Alemão'
+            },
+            ];
+
+            //solta seus script brabos aqui
+            function idadeReal(){
+                dogs.map(function(dog){
+                    return alert(dog.nome + " tem " + dog.idade + " anos.")
+                })
+            }
+
+            function soSpitz(){
+                var novoArray = dogs.filter((item) => item.raca === 'Spitz Alemão')
+                novoArray.forEach(element => {
+                    return alert(element.nome)
+                });
+            }
+
+            function idadeSoma(){
+                var anos = dogs.reduce(function(total, cachorro)
+                {
+                    return total + cachorro.idade
+                }, 0)
+
+                alert(`O resultado da soma das idades dos doguitos é: ${anos} anos.`)
+            }
+
+            function mudaTudo(){
+                // Tira os elementos css pra deixar o site feio mesmo
+                document.getElementsByTagName("link")[0].remove()
+
+                // Colocando fotos cursed do minecraft no lugar dos doguinhos
+                document.querySelector("#dog1").getElementsByTagName("img")[0].setAttribute("src", "meDeIbageins/minecraft1.jpg")
+                document.querySelector("#dog2").getElementsByTagName("img")[0].setAttribute("src", "meDeIbageins/minecraft2.jpg")
+                document.querySelector("#dog3").getElementsByTagName("img")[0].setAttribute("src", "meDeIbageins/minecraft3.jpg")
+                document.querySelector("#dog4").getElementsByTagName("img")[0].setAttribute("src", "meDeIbageins/minecraft4.jpg")
+                document.querySelector("#dog5").getElementsByTagName("img")[0].setAttribute("src", "meDeIbageins/minecraft5.jpg")
+
+                // Mudando o texto
+                document.getElementsByTagName("h1")[0].innerHTML = "top 10 cursed minecraft images!1!!1"
+                document.querySelector("#dog1").getElementsByTagName("h2")[0].innerHTML = "mineirando água111!1!!"
+                document.querySelector("#dog2").getElementsByTagName("h2")[0].innerHTML = "baú redondo"
+                document.querySelector("#dog3").getElementsByTagName("h2")[0].innerHTML = "hmmmmm"
+                document.querySelector("#dog4").getElementsByTagName("h2")[0].innerHTML = "vetoooor, aéeee"
+                document.querySelector("#dog5").getElementsByTagName("h2")[0].innerHTML = "😳"
+
+                // Cor da fonte
+                document.getElementsByTagName("body")[0].style.color = "#ff0000"
+            }
+
+        </script> 
+    </body>
+</html>
