@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    margin: 0 auto;
+    font-family: 'Montserrat';
+    background-color: #E5E5E5;
+}
+
+.container{
+    max-width: 90%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+.dis{
+    display: flex;
+}
+
+.coluna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.spa{
+    justify-content: space-around;
+}
+
+
+/* seção dos inputs */
+
+.container-inputs{
+    width: 290px;
+    height: 600px;
+    justify-content: space-around;
+    padding-top: 100px;
+}
+
+.box{
+    width: 290px;
+    height: 190px;
+    font-size: 18px;
+    color: #4D4D4D;
+}
+
+.box input{
+    width: 290px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    outline: 0;
+    font-size: 15px;
+    font-family: 'Montserrat';
+    padding-left: 15px;
+}
+
+.box button{
+    width: 130px;
+    height: 40px;
+    border-radius: 6px;
+    border: none;
+    outline: 0;
+    font-size: 15px;
+    color: #fff;
+    font-family: 'Montserrat';
+    background-color: #A94BEF;
+}
+
+.botao{
+    width: 290px;
+    justify-content: space-between;
+}
+
+/* seção wishlists */
+
+.contaiter-wishlist{
+    width: 800px;
+    height: 100%;
+}
+
+.wishlist{
+    width: 310px;
+    max-height: 100%;
+    background-color: #E4AFFF;
+    font-size: 15px;
+    padding: 13px;
+    color: white;
+    border-radius: 7px;
+    align-items: flex-start;
+    border: 2.5px solid #A94BEF;
+    margin-bottom: 40px;
+}
+
+.texto-wishlist{
+    width: 280px;
+    text-align: justify;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.texto-wishlist h4{
+    margin-bottom: 10px;
+}
+
+.wishlist img{
+    width: 8%;
+}
+
+.content-wishlist{
+    width: 100%;
+    max-height: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 70px;
+    padding-left: 70px;
+}
