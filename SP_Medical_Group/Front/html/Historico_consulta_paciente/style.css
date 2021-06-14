@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+:root{
+    --branco-fundo: #F2F2F2;
+    --azul-header: #06418A;
+    --azul-fonte: #35659D;
+    --preto-texto-selecionado: #555555;
+    --cinza-texto-fraco: #CBC9C9;
+    --cinza-fonte: #999999;
+    --azul-detalhes: #91D8F6;
+    --fonte: 'Oxygen', sans-serif;
+    --fonte-titulo: 80px;
+    --fonte-subtitulo: 30px;
+    --fonte-corpo: 18px;
+}
+
+body{
+    background-color: var(--branco-fundo);
+    background: url(../Login/img/fundo.jpg) no-repeat;
+}
+
+body, ul, li, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: var(--fonte-subtitulo);
+    font-family: var(--fonte);
+    letter-spacing: -2px;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 250px;
+    background-color: var(--azul-header);
+}
+
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 10px;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+}
+
+h1{
+    text-align: center;
+    color: var(--cinza-fonte);
+    font-family: var(--fonte);
+    margin-top: 60px;
+    color: var(--azul-fonte);
+    font-size: var(--fonte-titulo);
+}
+
+h2{
+    letter-spacing: -2px;
+    font-weight: 400;
+    color: var(--cinza-fonte);
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+
+    width: 1200px;
+    height: 500px;
+
+    box-sizing: border-box;
+    border: 1px solid var(--cinza-fonte);
+    border-radius: 2px;
+}
+
+.consulta{
+    display: flex;
+    width: 1200px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.consulta tr{
+    color:var(--cinza-fonte);
+}

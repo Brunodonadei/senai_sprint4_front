@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap');
+
+:root{
+    --branco-fundo: #F2F2F2;
+    --azul-header: #06418A;
+    --azul-fonte: #35659D;
+    --preto-texto-selecionado: #555555;
+    --cinza-texto-fraco: #CBC9C9;
+    --cinza-fonte: #999999;
+    --azul-detalhes: #91D8F6;
+    --fonte: 'Oxygen', sans-serif;
+    --fonte-titulo: 80px;
+    --fonte-subtitulo: 30px;
+    --fonte-corpo: 18px;
+}
+
+body{
+    background-color: var(--branco-fundo);
+    background: url(../Login/img/fundo.jpg) no-repeat;
+}
+
+body, ul, li, p{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: var(--fonte-subtitulo);
+    font-family: var(--fonte);
+    letter-spacing: -2px;
+}
+
+.header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 250px;
+    background-color: var(--azul-header);
+}
+
+
+.menu{
+    display: flex;
+}
+
+.menu li{
+    margin-left: 10px;
+}
+
+.menu li a{
+    display: block;
+    padding: 10px;
+}
+
+h1, h2{
+    text-align: center;
+    color: var(--cinza-fonte);
+    font-family: var(--fonte);
+}
+
+h1{
+    margin-top: 120px;
+    color: var(--azul-fonte);
+    font-size: var(--fonte-titulo);
+}
+
+h2{
+    letter-spacing: -2px;
+    font-weight: 400;
+}
+
+.content{
+    margin: 0px 600px;
+}
+
+.text-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+
+}
+
+.email, .senha{
+    width: 240px;
+    height: 32px;
+
+    color: var(--cinza-fonte);
+
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid var(--cinza-fonte);
+}
+
+.btn{
+    width: 245px;
+    height: 32px;
+
+    color: #F2F2F2;
+
+    border: 1px solid var(--cinza-fonte);
+    border-radius: 3px;
+
+    background: var(--cinza-fonte);
+
+    text-transform: uppercase;
+}
+
+
